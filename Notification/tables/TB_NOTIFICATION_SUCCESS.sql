@@ -1,0 +1,12 @@
+!set variable_substitution=true  
+!variables  
+
+CREATE OR REPLACE TABLE CHEM_&{ENV}_BUSINESSANALYTICS.SUPPLY_CHAIN.TB_NOTIFICATION_SUCCESS(  
+    ID INTEGER IDENTITY(1, 1),  
+    DAY VARCHAR(100),  
+    COMPLETED_TIME TIMESTAMP_LTZ(3),  
+    COUNT_TASK INTEGER,  
+    LOAD_TIME TIMESTAMP_LTZ(3)  
+);  
+
+!system echo " Successfully created table TB_NOTIFICATION_SUCCESS ....."
